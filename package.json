@@ -1,6 +1,6 @@
 {
   "name": "react-native-nested-form",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "复杂表单组件",
   "main": "form/index.js",
   "scripts": {
