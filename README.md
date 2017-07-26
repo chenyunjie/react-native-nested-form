@@ -1,11 +1,10 @@
-###react native表单组件###
-===
+# react native表单组件
 react-native-nested-form用常见的表单提交功能，支持表单嵌套，最后通过表单对象获取到整个表单值对象
 
-##安装##
+## 安装
 `npm install react-native-nested-form --save`
 
-##使用示例##
+## 使用示例
 ```javascript
 import Form from './src/form';
  import Input from './src/form/input';
@@ -40,7 +39,7 @@ import Form from './src/form';
 
 ```
 
-##示例结果输出##
+## 示例结果输出
 ```
 {
     "name":"chenyunjie",
@@ -57,8 +56,8 @@ import Form from './src/form';
 
 ```
 
-##说明##
-####可自定义表单项，表单项需要实现####
+## 说明
+#### 可自定义表单项，参考内置的Input实现，表单项需要实现
 
 props
 
