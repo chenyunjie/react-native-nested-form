@@ -1,0 +1,22 @@
+{
+  "name": "react-native-nested-form",
+  "version": "0.1.0",
+  "description": "复杂表单组件",
+  "main": "form/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenyunjie/react-native-nested-form.git"
+  },
+  "keywords": [
+    "表单"
+  ],
+  "author": "陈云杰",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chenyunjie/react-native-nested-form/issues"
+  },
+  "homepage": "https://github.com/chenyunjie/react-native-nested-form#readme"
+}
