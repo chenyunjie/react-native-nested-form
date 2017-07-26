@@ -14,8 +14,8 @@ import Form from './src/form';
     	 	super(props);   
     		this.onPressed = this.onPressed.bind(this);
     }
-         render() {
-             return (
+     render() {
+         return (
                      <View style={{padding: 30}}>
                           <Form ref={(form) => this.form = form}>
                                  <Input property="name" labelText="用户名" placeholder="请输入用户名"/>
@@ -27,15 +27,15 @@ import Form from './src/form';
                  
                           </Form>
                         <TouchableOpacity style={{width: 250, height: 35, marginTop: 30, justifyContent: 'center', alignItems: 'center', backgroundColor: '#40b0ff'}} onPress={this.onPressed}>
-                                     <Text>提交</Text>
-                                     </TouchableOpacity>
-                             </View>
-                      );
-             }
-          onPressed() {
-             console.log('form data: \n' + JSON.stringify(this.form.data()));
-             }
-     }
+                             <Text>提交</Text>
+                 		</TouchableOpacity>
+                 </View>
+         );
+     }
+     onPressed() {
+         console.log('form data: \n' + JSON.stringify(this.form.data()));
+    }
+}
 
 
 ```
