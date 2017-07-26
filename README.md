@@ -1,11 +1,11 @@
-###react native表单组件
+###react native表单组件###
 ===
 react-native-nested-form用常见的表单提交功能，支持表单嵌套，最后通过表单对象获取到整个表单值对象
 
-##安装
+##安装##
 `npm install react-native-nested-form --save`
 
-##使用示例
+##使用示例##
 ```javascript
 import Form from './src/form';
  import Input from './src/form/input';
@@ -28,7 +28,7 @@ import Form from './src/form';
                           </Form>
                         <TouchableOpacity style={{width: 250, height: 35, marginTop: 30, justifyContent: 'center', alignItems: 'center', backgroundColor: '#40b0ff'}} onPress={this.onPressed}>
                              <Text>提交</Text>
-                 		</TouchableOpacity>
+              		</TouchableOpacity>
                  </View>
          );
      }
@@ -39,5 +39,41 @@ import Form from './src/form';
 
 
 ```
+
+##示例结果输出##
+```
+{
+    "name":"chenyunjie",
+    "password":"123456",
+    "hobbies":[
+        {
+            "name":"足球"
+        },
+        {
+            "name":"篮球"
+        }
+    ]
+}
+
+```
+
+##说明##
+####可自定义表单项，表单项需要实现####
+
+props
+
+    每个表单项需要传递propery属性,表单的group=true时可以不传递,非group类型的表单数据没有property参数，则不会将值记录到表单数据中去
+    
+方法：
+
+    取值：getValue
+
+    设值：setValue
+
+属性：
+
+    表单标识：isFormCell=true
+
+表单自身也可以存在setValue方法，该方法会根据表单结构和从给定的数据中按照props.property进行设置值
 
 
