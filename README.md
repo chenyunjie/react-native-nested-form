@@ -61,7 +61,8 @@ import Form from './src/form';
 
 props
 
-    每个表单项需要传递propery属性,表单的group=true时可以不传递,非group类型的表单数据没有property参数，则不会将值记录到表单数据中去
+    a. 每个表单项需要传递propery属性,表单的group=true时可以不传递
+    b. 非group类型的表单数据没有property参数，则不会将值记录到表单数据中去
     
 方法：
 
